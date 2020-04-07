@@ -1,21 +1,25 @@
-var b = 0;
-httpGetAsync("https://api.github.com/users/jkutkut/repos?page=", 1);
+var b;
+getRepoCount("jkutkut");
 
-function httpGetAsync(theUrl, pageindex){
-    var xmlHttp = new XMLHttpRequest();
+function getRepoCount(user, pageindex){
+    if(!pageindex){
+        pageindex = 1;
+        b = 0;
+    }
+    let xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
             let res = JSON.parse(xmlHttp.response);
             if(res.length != 0){
                 b += res.length;
-                httpGetAsync(theUrl, pageindex + 1);
+                getRepoCount(user, pageindex + 1);
             }
             else{
                 console.log(b);
             }
         }
     }
-    xmlHttp.open("GET", theUrl+pageindex, true); // true for asynchronous 
+    let url = "https://api.github.com/users/" + user + "/repos?page=" + pageindex;
+    xmlHttp.open("GET", url, true); // true for asynchronous 
     xmlHttp.send(null);
 }
-
