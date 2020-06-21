@@ -1,4 +1,4 @@
-var b;
+var b = 0;
 getRepoCount("jkutkut");
 
 function getRepoCount(user, pageindex){
@@ -12,7 +12,7 @@ function getRepoCount(user, pageindex){
             let res = JSON.parse(xmlHttp.response);
             if(res.length != 0){
                 b += res.length;
-                getRepoCount(user, pageindex + 1);
+                // getRepoCount(user, pageindex + 1);
             }
             else{
                 console.log(b);
