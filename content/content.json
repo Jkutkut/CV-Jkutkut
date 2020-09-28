@@ -72,5 +72,61 @@
             ]
             
         ]
-    }
+    },
+
+    "main": [
+        {
+            "type": [
+                "Educación",
+                "Education"
+            ],
+            "Elements": [
+                {
+                    "date": "2015-2016",
+                    "title": "Título de Educación Secundaria Obligatoria",
+                    "subtitle": "I.E.S. Federico García Lorca",
+                    "extra": []
+                },
+                {
+                    "date": "2017-2018",
+                    "title": "Título de Bachillerato en ciencias tecnológicas",
+                    "subtitle": "I.E.S. Federico García Lorca",
+                    "extra": [
+                        "Acabando 2º con una media de 8,625"
+                    ]
+                },
+                {
+                    "date": "2018",
+                    "title": "Selectividad EvAU",
+                    "subtitle": "",
+                    "extra": [
+                        "Nota de 10,907"
+                    ]
+                },
+                {
+                    "date": "2018 – Actual",
+                    "title": "Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación",
+                    "subtitle": "ETSIT, UPM",
+                    "extra": []
+                }
+            ]
+        },
+        {
+            "type": [
+                "Educación complementaria",
+                "Complementary education"
+            ],
+            "Elements": [
+                {
+                    "date": "",
+                    "title": "",
+                    "subtitle": "",
+                    "extra": [
+                        
+                    ]
+                }
+            ]
+        }
+    ]
+
 }

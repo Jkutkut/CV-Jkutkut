@@ -2,6 +2,7 @@ var lanIndex = (navigator.language == "es-ES")? 0 : 1;
 var content;
 
 window.onload = function(){
+   console.log("json requested");
    fetch("content/content.json").then(response => response.json()).then(json => updateContent(json));
 }
 
@@ -18,7 +19,7 @@ function updateContent(json){
    }
 
    // INTRO
-   
+
    // BIO
    console.log("Execution ended");
 
