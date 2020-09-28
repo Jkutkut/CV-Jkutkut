@@ -22,36 +22,55 @@
         ]
     },
 
-    "bio": [
-        {
-            "intro": "Soy un estudiante de la ETSIT, UPM entusiasmado en la programación. Actualmente complemento mis estudios con trabajar en BQ y programar en mi tiempo libre.",
-            "fields": [
+    "intro": {
+        "introMsg": [
+            "Hola! Soy",
+            "Hey there! I am"
+        ],
+        "qualities": [
+            [
+                "Trabajo en equipo", "Serio", "Autodidacta", "Resolutivo", "Positivo", "Perfeccionista", "Ganas de aprender"
+            ],
+            [
+                "Teamwork", "Reputable", "Self-taught", "Spirit of resolve", "Positive", "Perfeccionist", "Desire to learn"
+            ]
+        ]
+    },
+
+    "bio": {
+        "intro":[
+            "Soy un estudiante de la ETSIT, UPM entusiasmado en la programación. Actualmente complemento mis estudios con trabajar en BQ y programar en mi tiempo libre.",
+            ""
+        ],
+        "fields": [
+            [
                 "Nombre",
                 "Nacimiento",
                 "UPM Email",
                 "BQ Email"
             ],
-            "fieldsData":[
-                "Jkutkut Re",
-                "2 Agosto, 2000",
-                "jorge.re.gonzalez@alumnos.upm.es",
-                "jorgere@bq.com"
-            ]
-        },
-        {
-            "Intro":"",
-            "fields":[
+            [
                 "Name",
                 "Birthdate",
                 "UPM Email",
                 "BQ Email"
-            ],
-            "fieldsData":[
+            ]
+                
+        ],
+        "fieldsData": [
+            [
                 "Jkutkut Re",
-                "August 2, 2000",
+                "2 Agosto, 2000",
+                "jorge.re.gonzalez@alumnos.upm.es",
+                "jorgere@bq.com"
+            ],
+            [
+                "Jkutkut Re",
+                "August 2nd, 2000",
                 "jorge.re.gonzalez@alumnos.upm.es",
                 "jorgere@bq.com"
             ]
-        }
-    ]
+            
+        ]
+    }
 }
