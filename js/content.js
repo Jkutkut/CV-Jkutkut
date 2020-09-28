@@ -16,6 +16,14 @@ function updateContent(json){
    }
 
    // INTRO
+   let elems = [];
+   elems.append($("<span class=\"subheading\">" + json['intro']['introMsg'][lanIndex] + "</span>"));
+   elems.append($("<h1>" + json['intro']['name'] + "</h1>"));
+   elems.append($("<h2><span class=\"txt-rotate\" data-period=\"2000\" data-rotate='" + json['intro']['qualities'][lanIndex] + "'></span>"));
+
+   for(let i = 0; i < elems.length; i++){
+      $("#intro").append(elems[i]);
+   }
 
    // BIO
    console.log("Execution ended");
