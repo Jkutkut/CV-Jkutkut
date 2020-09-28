@@ -1,0 +1,16 @@
+{
+    "top-bar": [
+        [
+            "Inicio",
+            "información",
+            "Currículum",
+            "Contacto"
+        ],
+        [
+            "Intro", 
+            "Information",
+            "CV",
+            "Contact"
+        ]
+    ]
+}
