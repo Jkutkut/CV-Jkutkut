@@ -84,30 +84,57 @@
             "Elements": [
                 {
                     "date": "2015-2016",
-                    "title": "Título de Educación Secundaria Obligatoria",
-                    "subtitle": "I.E.S. Federico García Lorca",
+                    "title": [
+                        "Título de Educación Secundaria Obligatoria",
+                        ""
+                    ],
+                    "subtitle": [
+                        "I.E.S. Federico García Lorca",
+                        "I.E.S. Federico García Lorca"
+                    ],
                     "extra": []
                 },
                 {
                     "date": "2017-2018",
-                    "title": "Título de Bachillerato en ciencias tecnológicas",
-                    "subtitle": "I.E.S. Federico García Lorca",
+                    "title": [
+                        "Título de Bachillerato en ciencias tecnológicas",
+                        ""
+                    ],
+                    "subtitle": [
+                        "I.E.S. Federico García Lorca",
+                        "I.E.S. Federico García Lorca"
+                    ],
                     "extra": [
-                        "Acabando 2º con una media de 8,625"
+                        [
+                            "Acabando 2º con una media de 8,625",
+                            ""
+                        ]
                     ]
                 },
                 {
                     "date": "2018",
-                    "title": "Selectividad EvAU",
+                    "title": [
+                        "Selectividad EvAU",
+                        ""
+                    ],
                     "subtitle": "",
                     "extra": [
-                        "Nota de 10,907"
+                        [
+                            "Nota de 10,907",
+                            ""
+                        ]
                     ]
                 },
                 {
                     "date": "2018 – Actual",
-                    "title": "Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación",
-                    "subtitle": "ETSIT, UPM",
+                    "title": [
+                        "Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación",
+                        ""
+                    ],
+                    "subtitle": [
+                        "ETSIT, UPM",
+                        ""
+                    ],
                     "extra": []
                 }
             ]
@@ -119,13 +146,246 @@
             ],
             "Elements": [
                 {
-                    "date": "",
-                    "title": "",
-                    "subtitle": "",
+                    "date": "2018",
+                    "title": [
+                        "Curso intensivo JavaScript 50h",
+                        ""
+                    ],
+                    "subtitle": [
+                        "Convenio Samsung-UPM",
+                        ""
+                    ],
                     "extra": [
-                        
+                        [
+                            "Desarrollo y programación web (HTML, CSS y JavaScript).",
+                            ""
+                        ],
+                        [
+                            "Impartido por Santiago Alonso Villaverde.",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "date": "2014 - 2020",
+                    "title": [
+                        "Cursos de ampliación del nivel de inglés",
+                        ""
+                    ],
+                    "subtitle": [
+                        "Diverbo",
+                        ""
+                    ],
+                    "extra": []
+                },
+                {
+                    "date": "2017 - 2020",
+                    "title": [
+                        "Programación en Hackerrank",
+                        ""
+                    ],
+                    "subtitle": [],
+                    "extra": [
+                        [
+                            "<strong>Cursos completados</strong>:",
+                            ""
+                        ],
+                        [
+                            "Java, JavaScript, Linux Shell, Regex, Python",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "date": "2019 - Actual",
+                    "title": [
+                        "Curso de MatLab (+80h)",
+                        "MatLab course (+80h)"
+                    ],
+                    "subtitle": [
+                        "UPM",
+                        "UPM"
+                    ],
+                    "extra": []
+                },
+                {
+                    "date": "2019",
+                    "title": [
+                        "Curso manejo Git",
+                        "Git course"
+                    ],
+                    "subtitle": [],
+                    "extra": []
+                },
+                {
+                    "date": "2020",
+                    "title": [
+                        "Curso LaTeX",
+                        "LaTeX course"
+                    ],
+                    "subtitle": [],
+                    "extra": []
+                },
+                {
+                    "date": "2013 - Actual",
+                    "title": [
+                        "Autodidacta",
+                        ""
+                    ],
+                    "subtitle": [],
+                    "extra": [
+                        [
+                            "<strong>Herramientas para la optimización del tiempo</strong>: Git, Shell Script, Regex.",
+                            ""
+                        ],
+                        [
+                            "<strong>Programación</strong>: JavaScript, Python, Java, Shell script, Regex.",
+                            ""
+                        ],
+                        [
+                            "<strong>Robótica</strong>: Arduino (C++), Bitbloq.",
+                            ""
+                        ],
+                        [
+                            "<strong>Programación por bloques</strong>: Automagic, Bitbloq, Scratch.",
+                            ""
+                        ],
+                        [
+                            "<strong>Desarrollo móvil</strong>: AppInventor, AndroidStudio, Automagic.",
+                            ""
+                        ],
+                        [
+                            "<strong>Diseño 3D aplicado a impresión 3D</strong>: Sketchup, FreeCad, TinkerCad, OpenScad.",
+                            ""
+                        ],
+                        [
+                            "<strong>Herramientas de edición multimedia</strong>: GIMP, kdenlive, Inkscape.",
+                            ""
+                        ],
+                        [
+                            "<strong>Herramientas ofimática</strong>: Google Sheets, LaTeX, Google Slides, Google Docs, Google forms...",
+                            ""
+                        ],
+                        [
+                            "<strong>Bases de datos</strong>: MySQL, SQLite, php.",
+                            ""
+                        ],
+                        [
+                            "<strong>Diseño de circuitos electrónicos</strong>: VHDL",
+                            ""
+                        ]
                     ]
                 }
+            ]
+        },
+        {
+            "type": [
+                "Experiencia",
+                ""
+            ],
+            "Elements":[
+                {
+                    "date": "",
+                    "title": [
+                        "",
+                        ""
+                    ],
+                    "subtitle": [
+                        "",
+                        ""
+                    ],
+                    "extra": [
+                        [
+                            "",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "date": "",
+                    "title": [
+                        "",
+                        ""
+                    ],
+                    "subtitle": [
+                        "",
+                        ""
+                    ],
+                    "extra": [
+                        [
+                            "",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "date": "",
+                    "title": [
+                        "",
+                        ""
+                    ],
+                    "subtitle": [
+                        "",
+                        ""
+                    ],
+                    "extra": [
+                        [
+                            "",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "date": "",
+                    "title": [
+                        "",
+                        ""
+                    ],
+                    "subtitle": [
+                        "",
+                        ""
+                    ],
+                    "extra": [
+                        [
+                            "",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "date": "",
+                    "title": [
+                        "",
+                        ""
+                    ],
+                    "subtitle": [
+                        "",
+                        ""
+                    ],
+                    "extra": [
+                        [
+                            "",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "date": "",
+                    "title": [
+                        "",
+                        ""
+                    ],
+                    "subtitle": [
+                        "",
+                        ""
+                    ],
+                    "extra": [
+                        [
+                            "",
+                            ""
+                        ]
+                    ]
+                },
             ]
         }
     ]
