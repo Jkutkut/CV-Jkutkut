@@ -417,28 +417,24 @@
         "elements": [
             {
                 "title": [
-                    "JavaScript",
                     "JavaScript"
                 ],
                 "percent": "90%"
             },
             {
                 "title": [
-                    "Python",
                     "Python"
                 ],
                 "percent": "85%"
             },
             {
                 "title": [
-                    "Java",
                     "Java"
                 ],
                 "percent": "70%"
             },
             {
                 "title": [
-                    "Shell script",
                     "Shell script"
                 ],
                 "percent": "75%"
@@ -452,7 +448,6 @@
             },
             {
                 "title": [
-                    "Regex",
                     "Regex"
                 ],
                 "percent": "95%"
@@ -460,13 +455,12 @@
             {
                 "title": [
                     "AppInventor y AndroidStudio",
-                    "AppInventor y AndroidStudio"
+                    "AppInventor and AndroidStudio"
                 ],
                 "percent": "85%"
             },
             {
                 "title": [
-                    "Arduino",
                     "Arduino"
                 ],
                 "percent": "80%"
@@ -480,8 +474,7 @@
             },
             {
                 "title": [
-                    "MySQL, SQLite, php",
-                    "MySQL, SQLite, php"
+                    "MySQL, SQLite, php, json"
                 ],
                 "percent": "70%"
             },
