@@ -39,6 +39,10 @@
     },
 
     "bio": {
+        "": [
+            "Sobre mí",
+            "About me"
+        ],
         "intro":[
             "Soy un estudiante de la ETSIT, UPM entusiasmado en la programación. Actualmente complemento mis estudios con trabajar en BQ y programar en mi tiempo libre.",
             ""
