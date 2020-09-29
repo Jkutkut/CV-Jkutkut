@@ -409,106 +409,156 @@
             ]
         }
     ],
+    "skills": {
+        "type": [
+            "Habilidades",
+            "Skills"
+        ],
+        "elements": [
+            {
+                "title": [
+                    "JavaScript",
+                    "JavaScript"
+                ],
+                "percent": "90%"
+            },
+            {
+                "title": [
+                    "Python",
+                    "Python"
+                ],
+                "percent": "85%"
+            },
+            {
+                "title": [
+                    "Java",
+                    "Java"
+                ],
+                "percent": "70%"
+            },
+            {
+                "title": [
+                    "Shell script",
+                    "Shell script"
+                ],
+                "percent": "75%"
+            },
+            {
+                "title": [
+                    "Git y Visual Studio Code",
+                    "Git and Visual Studio Code"
+                ],
+                "percent": "95%"
+            },
+            {
+                "title": [
+                    "Regex",
+                    "Regex"
+                ],
+                "percent": "95%"
+            },
+            {
+                "title": [
+                    "AppInventor y AndroidStudio",
+                    "AppInventor y AndroidStudio"
+                ],
+                "percent": "85%"
+            },
+            {
+                "title": [
+                    "Arduino",
+                    "Arduino"
+                ],
+                "percent": "80%"
+            },
+            {
+                "title": [
+                    "MatLab y Geogebra",
+                    "MatLab and Geogebra"
+                ],
+                "percent": "65%"
+            },
+            {
+                "title": [
+                    "MySQL, SQLite, php",
+                    "MySQL, SQLite, php"
+                ],
+                "percent": "70%"
+            },
+            {
+                "title": [
+                    "Diseño 3D",
+                    "3D design"
+                ],
+                "percent": "70%"
+            },
+            {
+                "title": [
+                    "Edición imagen y vídeo",
+                    "Image and video editing"
+                ],
+                "percent": "60%"
+            },
+            {
+                "title": [
+                    "Manejo Linux y Windows",
+                    "Linux and Windows"
+                ],
+                "percent": "90%"
+            },
+            {
+                "title": [
+                    "Herraminetas ofimática",
+                    "Office tools"
+                ],
+                "percent": "95%"
+            }
+        ]
+    },
 
-    "skills": [
-        {
-            "title": [
-                "JavaScript",
-                "JavaScript"
-            ],
-            "percent": "90%"
-        },
-        {
-            "title": [
-                "Python",
-                "Python"
-            ],
-            "percent": "85%"
-        },
-        {
-            "title": [
-                "Java",
-                "Java"
-            ],
-            "percent": "70%"
-        },
-        {
-            "title": [
-                "Shell script",
-                "Shell script"
-            ],
-            "percent": "75%"
-        },
-        {
-            "title": [
-                "Git y Visual Studio Code",
-                "Git and Visual Studio Code"
-            ],
-            "percent": "95%"
-        },
-        {
-            "title": [
-                "Regex",
-                "Regex"
-            ],
-            "percent": "95%"
-        },
-        {
-            "title": [
-                "AppInventor y AndroidStudio",
-                "AppInventor y AndroidStudio"
-            ],
-            "percent": "85%"
-        },
-        {
-            "title": [
-                "Arduino",
-                "Arduino"
-            ],
-            "percent": "80%"
-        },
-        {
-            "title": [
-                "MatLab y Geogebra",
-                "MatLab and Geogebra"
-            ],
-            "percent": "65%"
-        },
-        {
-            "title": [
-                "MySQL, SQLite, php",
-                "MySQL, SQLite, php"
-            ],
-            "percent": "70%"
-        },
-        {
-            "title": [
-                "Diseño 3D",
-                "3D design"
-            ],
-            "percent": "70%"
-        },
-        {
-            "title": [
-                "Edición imagen y vídeo",
-                "Image and video editing"
-            ],
-            "percent": "60%"
-        },
-        {
-            "title": [
-                "Manejo Linux y Windows",
-                "Linux and Windows"
-            ],
-            "percent": "90%"
-        },
-        {
-            "title": [
-                "Herraminetas ofimática",
-                "Office tools"
-            ],
-            "percent": "95%"
-        }
-    ]
-
+    "contact": {
+        "type": [
+            "Contacta conmigo",
+            ""
+        ],
+        "elements": [
+            {
+                "title": [
+                    "Correo UPM",
+                    "UPM mail"
+                ],
+                "href":[
+                    "mail"
+                ],
+                "data": [
+                    "jorge.re.gonzalez@alumnos.upm.es"
+                ]
+            },
+            {
+                "title": [
+                    "Correo BQ",
+                    "BQ Mail"
+                ],
+                "href":[
+                    "mail"
+                ],
+                "data": [
+                    "jorge.re@bq.com"
+                ]
+            },
+            {
+                "title": [
+                    "Github",
+                    "Github"
+                ],
+                "href":[
+                    "url",
+                    "https://github.com/Jkutkut/Jkutkut-projects"
+                ],
+                "data": [
+                    "Jkutut's Github"
+                ]
+            }
+        ]
+    }
 }
