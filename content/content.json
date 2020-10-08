@@ -239,7 +239,7 @@
                     "subtitle": [],
                     "extra": [
                         [
-                            "<strong>Herramientas para la optimización del tiempo</strong>: Git, Shell Script, Regex.",
+                            "<strong>Herramientas para la optimización del tiempo</strong>: Git, Shell Script, Regex y mecanografía.",
                             ""
                         ],
                         [
@@ -413,6 +413,7 @@
             ]
         }
     ],
+
     "skills": {
         "type": [
             "Habilidades",
