@@ -42,14 +42,8 @@ function updateContent(json){
       $("#bio").append(elems[i]); 
    }
 
-
-   //MainNav
-   for(let i = 0; i < json["main"].length; i++){
-      $("#mainNavi").append($("<li><a href=\"#page-" + (i + 1) + "\">" + json["main"][i]["type"][lanIndex] + "</a></li>"));
-   }
-   $("#mainNavi").append($("<li><a href=\"#page-" + (json["main"].length + 1) + "\">" + json["skills"]["type"][lanIndex] + "</a></li>"))
    
-   //Main
+   //MAIN
    elems = [];
    let category = $("#page-1").clone(); //category template (education...)
    let ele = $(category.children()[1]); //content template
@@ -60,7 +54,7 @@ function updateContent(json){
    for(let i = 0; i < json["main"].length; i++){ //for each category
       let cate = category.clone(); // create new category
       cate.attr("id", "page-" + (i + 1)); // set id
-      data = (json["main"][i])? json["main"][i] : json["skills"]; //get json-data of Category: education...
+      let data = (json["main"][i])? json["main"][i] : json["skills"]; //get json-data of Category: education...
 
       cate.append("<h2 class=\"heading\">" + data["type"][lanIndex] + "</h2>"); //add title
       for(let j = 0; j < data["elements"].length; j++){ //For each element on category
@@ -88,6 +82,55 @@ function updateContent(json){
 
    for(let i = 0; i < elems.length; i++){ // for each category
       $("#main").append(elems[i]); // add it to the DOM
+   }
+
+
+   //MAINNAV
+   for(let i = 0; i < json["main"].length; i++){
+      $("#mainNavi").append($("<li><a href=\"#page-" + (i + 1) + "\">" + json["main"][i]["type"][lanIndex] + "</a></li>"));
+   }
+   $("#mainNavi").append($("<li><a href=\"#page-" + (json["main"].length + 1) + "\">" + json["skills"]["type"][lanIndex] + "</a></li>"));
+
+
+   //SKILLS
+   elems = [];
+   let data = json["skills"]["elements"];
+   $("#page-5").children("h2").text(json["skills"]["type"][lanIndex]);
+   let eleP = $($("#skills").children()[0]).clone(); //skill template parent
+   let eleC = $(eleP.children()[0]); //skill template child
+   
+   let progP = $(eleC.children()[0]);
+   let progC = $(progP.children()[0]);
+   
+
+   $("#skills").empty(); //remove the template
+   eleP.empty(); //clear the template
+   eleC.empty(); //clear the template
+   progP.empty(); //clear the template
+   
+
+   for(let i = 0; i < data.length; i++){
+      let rEleP = eleP.clone();
+      let rEleC = eleC.clone();
+      
+      let rProgP = progP.clone();
+      let rProgC = progC.clone();
+
+      let d = data[i].percent;
+      rProgC.attr("aria-valuenow", d);
+      rProgC.css("width", d);
+      rProgC.children("span").text(d);
+
+      rEleC.append($("<h3>" + data[i].title[lanIndex] + "</h3>"));
+      rProgP.append(rProgC);
+      rEleC.append(rProgP);
+      
+      rEleP.append(rEleC);
+      elems.push(rEleP);
+   }
+
+   for(let i = 0; i < elems.length; i++){
+      $("#skills").append(elems[i]);
    }
 
    console.log("Execution ended");
