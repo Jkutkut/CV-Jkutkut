@@ -8,6 +8,10 @@ function updateContent(json){
    console.log("executing update content");
    console.log(json);
 
+   let g = function(arr){
+      return (arr.length == 1)? arr[0] : arr[lanIndex];
+   }
+
    // TOP-BAR
    for(let i = 0; i < json["top-bar"]["fields"][lanIndex].length; i++){
       let href = json["top-bar"]["href"][i];

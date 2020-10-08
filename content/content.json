@@ -3,14 +3,18 @@
         "fields":[
             [
                 "Inicio",
-                "información",
-                "Currículum",
-                "Contacto"
+                "Intro"
             ],
             [
-                "Intro", 
-                "Information",
-                "CV",
+                "Información",
+                "Information"
+            ],
+            [
+                "Currículum",
+                "CV"
+            ],
+            [
+                "Contacto",
                 "Contact"
             ]
         ],
@@ -30,10 +34,32 @@
         "name": "Jkutkut Re",
         "qualities": [
             [
-                "Trabajo en equipo", "Serio", "Autodidacta", "Resolutivo", "Positivo", "Perfeccionista", "Ganas de aprender"
+                "Trabajo en equipo",
+                "Teamwork"
             ],
             [
-                "Teamwork", "Reputable", "Self-taught", "Spirit of resolve", "Positive", "Perfeccionist", "Desire to learn"
+                "Serio",
+                "Reputable"
+            ],
+            [
+                "Autodidacta",
+                "Self-taught"
+            ],
+            [
+                "Resolutivo",
+                "Spirit of resolve"
+            ],
+            [
+                "Positivo",
+                "Positive"
+            ],
+            [
+                "Perfeccionista",
+                "Perfeccionist"
+            ],
+            [
+                "Ganas de aprender",
+                "Desire to learn"
             ]
         ]
     },
@@ -44,38 +70,41 @@
             "About me"
         ],
         "intro":[
-            "Soy un estudiante de la ETSIT, UPM entusiasmado en la programación. Actualmente complemento mis estudios con trabajar en BQ y programar en mi tiempo libre.",
-            ""
+            "Soy un estudiante de la ETSIT, UPM entusiasmado de la programación. Actualmente complemento mis estudios trabajando en BQ y programando en mi tiempo libre.",
+            "I am a student at ETSIT, UPM that loves programming. At the moment, I enhance my studies working at BQ and developing my own programming projects."
         ],
         "fields": [
             [
                 "Nombre",
-                "Nacimiento",
-                "UPM Email",
-                "BQ Email"
+                "Name"
             ],
             [
-                "Name",
-                "Birthdate",
+                "Nacimiento",
+                "Birthdate"
+            ],
+            [
                 "UPM Email",
+                "UPM Email"
+            ],
+            [
+                "BQ Email",
                 "BQ Email"
-            ]
-                
+            ]                
         ],
         "fieldsData": [
             [
-                "Jkutkut Re",
-                "2 Agosto, 2000",
-                "jorge.re.gonzalez@alumnos.upm.es",
-                "jorgere@bq.com"
+                "Jkutkut Re"
             ],
             [
-                "Jkutkut Re",
-                "August 2nd, 2000",
-                "jorge.re.gonzalez@alumnos.upm.es",
+                "2 Agosto, 2000",
+                "August 2nd, 2000"
+            ],
+            [
+                "jorge.re.gonzalez@alumnos.upm.es"
+            ],
+            [
                 "jorgere@bq.com"
             ]
-            
         ]
     },
 
@@ -90,10 +119,9 @@
                     "date": "2015-2016",
                     "title": [
                         "Título de Educación Secundaria Obligatoria",
-                        ""
+                        "Secondary school certificate"
                     ],
                     "subtitle": [
-                        "I.E.S. Federico García Lorca",
                         "I.E.S. Federico García Lorca"
                     ],
                     "extra": []
@@ -102,16 +130,15 @@
                     "date": "2017-2018",
                     "title": [
                         "Título de Bachillerato en ciencias tecnológicas",
-                        ""
+                        "Technologic baccalaureate certificate"
                     ],
                     "subtitle": [
-                        "I.E.S. Federico García Lorca",
                         "I.E.S. Federico García Lorca"
                     ],
                     "extra": [
                         [
                             "Acabando 2º con una media de 8,625",
-                            ""
+                            "Average grade of 8,625 / 10"
                         ]
                     ]
                 },
@@ -119,13 +146,13 @@
                     "date": "2018",
                     "title": [
                         "Selectividad EvAU",
-                        ""
+                        "Higher education test (EvAU)"
                     ],
                     "subtitle": "",
                     "extra": [
                         [
                             "Nota de 10,907",
-                            ""
+                            "10,907 / 14"
                         ]
                     ]
                 },
@@ -133,11 +160,10 @@
                     "date": "2018 – Actual",
                     "title": [
                         "Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación",
-                        ""
+                        "Bachelor of Engineering in Telecommunication Technologies and Services Engineering"
                     ],
                     "subtitle": [
-                        "ETSIT, UPM",
-                        ""
+                        "ETSIT, UPM"
                     ],
                     "extra": []
                 }
@@ -153,20 +179,20 @@
                     "date": "2018",
                     "title": [
                         "Curso intensivo JavaScript 50h",
-                        ""
+                        "JavaScript 50h course"
                     ],
                     "subtitle": [
                         "Convenio Samsung-UPM",
-                        ""
+                        "Covenant Samsung-UPM"
                     ],
                     "extra": [
                         [
                             "Desarrollo y programación web (HTML, CSS y JavaScript).",
-                            ""
+                            "Web development and programming (HTML, CSS and JavaScript)."
                         ],
                         [
                             "Impartido por Santiago Alonso Villaverde.",
-                            ""
+                            "Taught by Santiago Alonso Villaverde."
                         ]
                     ]
                 },
@@ -174,11 +200,10 @@
                     "date": "2014 - 2020",
                     "title": [
                         "Cursos de ampliación del nivel de inglés",
-                        ""
+                        "English courses"
                     ],
                     "subtitle": [
-                        "Diverbo",
-                        ""
+                        "Diverbo"
                     ],
                     "extra": []
                 },
@@ -186,17 +211,16 @@
                     "date": "2017 - 2020",
                     "title": [
                         "Programación en Hackerrank",
-                        ""
+                        "Hackerrank programming"
                     ],
                     "subtitle": [],
                     "extra": [
                         [
                             "<strong>Cursos completados</strong>:",
-                            ""
+                            "<strong>Ended courses</strong>:"
                         ],
                         [
-                            "Java, JavaScript, Linux Shell, Regex, Python",
-                            ""
+                            "Java, JavaScript, Linux Shell, Regex, Python"
                         ]
                     ]
                 },
@@ -207,7 +231,6 @@
                         "MatLab course (+80h)"
                     ],
                     "subtitle": [
-                        "UPM",
                         "UPM"
                     ],
                     "extra": []
@@ -234,49 +257,49 @@
                     "date": "2013 - Actual",
                     "title": [
                         "Autodidacta",
-                        ""
+                        "Self-taught"
                     ],
                     "subtitle": [],
                     "extra": [
                         [
                             "<strong>Herramientas para la optimización del tiempo</strong>: Git, Shell Script, Regex y mecanografía.",
-                            ""
+                            "<strong>Time optimization tools</strong>: Git, Shell Script, Regex and typewriting."
                         ],
                         [
-                            "<strong>Programación</strong>: JavaScript, Python, Java, Shell script, Regex.",
-                            ""
+                            "<strong>Programación</strong>: JavaScript, Python3, Java, Shell script, Regex.",
+                            "<strong>Programming</strong>: JavaScript, Python3, Java, Shell script, Regex."
                         ],
                         [
                             "<strong>Robótica</strong>: Arduino (C++), Bitbloq.",
-                            ""
+                            "<strong>Robotics</strong>: Arduino (C++), Bitbloq."
                         ],
                         [
-                            "<strong>Programación por bloques</strong>: Automagic, Bitbloq, Scratch.",
-                            ""
+                            "<strong>Programación por bloques</strong>: Automagic, Bitbloq, Scratch, CoSpaces.",
+                            "<strong>Block-based visual programming</strong>: AppInventor, Bitbloq, Automagic, Scratch, CoSpaces."
                         ],
                         [
-                            "<strong>Desarrollo móvil</strong>: AppInventor, AndroidStudio, Automagic.",
-                            ""
+                            "<strong>Desarrollo android</strong>: AppInventor, AndroidStudio, Automagic.",
+                            "<strong>Android development</strong>: AppInventor, AndroidStudio, Automagic."
                         ],
                         [
                             "<strong>Diseño 3D aplicado a impresión 3D</strong>: Sketchup, FreeCad, TinkerCad, OpenScad.",
-                            ""
+                            "<strong>3D design for 3D printing</strong>: Sketchup, FreeCad, TinkerCad, OpenScad."
                         ],
                         [
-                            "<strong>Herramientas de edición multimedia</strong>: GIMP, kdenlive, Inkscape.",
-                            ""
+                            "<strong>Herramientas de edición multimedia</strong>: GIMP, kdenlive, Inkscape, PicsArt.",
+                            "<strong>Multimedia editing tools</strong>: GIMP, kdenlive, Inkscape, PicsArt."
                         ],
                         [
                             "<strong>Herramientas ofimática</strong>: Google Sheets, LaTeX, Google Slides, Google Docs, Google forms...",
-                            ""
+                            "<strong>Ofimatic tools</strong>: Google Sheets, LaTeX, Google Slides, Google Docs, Google forms..."
                         ],
                         [
-                            "<strong>Bases de datos</strong>: MySQL, SQLite, php.",
-                            ""
+                            "<strong>Bases de datos</strong>: MySQL, SQLite3, php.",
+                            "<strong>Data bases</strong>: MySQL, SQLite3, php."
                         ],
                         [
                             "<strong>Diseño de circuitos electrónicos</strong>: VHDL",
-                            ""
+                            "<strong>Electronic circuit design</strong>: VHDL"
                         ]
                     ]
                 }
@@ -292,13 +315,13 @@
                     "date": "2013-2020",
                     "title": [
                         "Desarrollo de proyectos",
-                        ""
+                        "Project development"
                     ],
                     "subtitle": [],
                     "extra": [
                         [
                             "Desarrollo en Programación, Robótica y diseño 3D.",
-                            ""
+                            "Programming, robotics and 3D design development."
                         ]
                     ]
                 },
@@ -306,7 +329,7 @@
                     "date": "2014 – 2020",
                     "title": [
                         "Programación avanzada en AppInventor",
-                        ""
+                        "AppInventor advanced programming"
                     ],
                     "subtitle": [],
                     "extra": []
@@ -315,16 +338,13 @@
                     "date": "2015 – 2019",
                     "title": [
                         "Programación y diseño de comunicación entre dispositivos móviles y Arduino",
-                        ""
+                        "Communication programming and design using smartphones and Arduino"
                     ],
-                    "subtitle": [
-                        "",
-                        ""
-                    ],
+                    "subtitle": [],
                     "extra": [
                         [
                             "Haciendo uso de Bluetooth y Wifi.",
-                            ""
+                            "Using Bluetooth and Wifi."
                         ]
                     ]
                 },
@@ -332,19 +352,18 @@
                     "date": "2013 - 2018",
                     "title": [
                         "Competiciones de programación y robótica",
-                        ""
+                        "Programming and robotics championships"
                     ],
                     "subtitle": [
-                        "Robocampeones</span><br><span class='position'>Retotech Fundación Endesa (<a href='#endesa'>detalles</a>)",
-                        ""
+                        "Robocampeones</span><br><span class='position'>Retotech Fundación Endesa (<a href='#endesa'>detalles</a>)"
                     ],
                     "extra": []
                 },
                 {
                     "date": "2018-2020",
                     "title": [
-                        "Profesor de programación y robótica",
-                        ""
+                        "Profesor de programación, diseño 3D, VR y robótica",
+                        "Programming, 3D design, VR and robotics teacher"
                     ],
                     "subtitle": [
                         "BQ",
@@ -365,10 +384,9 @@
                     "date": "2020 - Actual",
                     "title": [
                         "Creación de contenido para la enseñanza",
-                        ""
+                        "Content creation for teaching"
                     ],
                     "subtitle": [
-                        "BQ",
                         "BQ"
                     ],
                     "extra": []
@@ -385,10 +403,9 @@
                     "date": "2018",
                     "title": [
                         "Entrar al equipo de BQ con 17-18 años",
-                        ""
+                        "Join BQ at age 17-18"
                     ],
                     "subtitle": [
-                        "BQ",
                         "BQ"
                     ],
                     "extra": []
@@ -396,8 +413,8 @@
                 {
                     "date": "2018",
                     "title": [
-                        "Ganadores Retotech Fundación Endesa",
-                        ""
+                        "Ganadores competición Retotech Fundación Endesa",
+                        "Winners of Retotech Fundación Endesa's championship"
                     ],
                     "subtitle": [
                         "Proyecto “LEARNING ABOUT ENERGY”",
@@ -405,8 +422,8 @@
                     ],
                     "extra": [
                         [
-                            "Encargado de la programación móvil y Arduino",
-                            ""
+                            "Encargado de la programación móvil y Arduino.",
+                            "Android and Arduino software developer."
                         ]
                     ]
                 }
@@ -517,7 +534,7 @@
     "contact": {
         "type": [
             "Contacta conmigo",
-            ""
+            "Contact me"
         ],
         "elements": [
             {
@@ -546,7 +563,6 @@
             },
             {
                 "title": [
-                    "Github",
                     "Github"
                 ],
                 "href":[
