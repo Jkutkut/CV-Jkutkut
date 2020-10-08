@@ -1,4 +1,5 @@
-var lanIndex = (navigator.language == "es-ES")? 0 : 1;
+var lanIndex = 0;
+// var lanIndex = (navigator.language == "es-ES")? 0 : 1;
 
 // fetch("content/content.json").then(response => response.json()).then(json => updateContent(json));
 fetch("https://jkutkut.github.io/CV-Jkutkut/content/content.json").then(response => response.json()).then(json => updateContent(json));
@@ -50,40 +51,44 @@ function updateContent(json){
    
    //Main
    elems = [];
-   for(let i = 0; i < 1; i++){
-   // for(let i = 0; i < json["main"].length + 1; i++){
-      let cont = $("<div id=\"page-" + (i + 1) + "\" class= \"page\"></div>");
-      
-      let data;
-      data = (json["main"][i])? json["main"][i] : json["skills"]; //Category: education...
+   let category = $("#page-1").clone(); //category template (education...)
+   let ele = $(category.children()[1]); //content template
+   ele.children()[1].remove();
+   $("#main").empty(); //clear the parent
+   category.empty(); //clear the category template
+   
+   for(let i = 0; i < json["main"].length; i++){ //for each category
+      let cate = category.clone(); // create new category
+      cate.attr("id", "page-" + (i + 1)); // set id
+      data = (json["main"][i])? json["main"][i] : json["skills"]; //get json-data of Category: education...
 
-      
-      cont.append("<h2 class=\"heading\">" + data["type"][lanIndex] + "</h2>"); //Title
-      
-      for(let j = 0; j < data["elements"].length; j++){
-         let el = $("<div class=\"resume-wrap d-flex ftco-animate\"><div class=\"icon d-flex align-items-center justify-content-center\"><span class=\"flaticon-ideas\"></span></div>");
-         let e = $("<div class=\"text pl-3\"></div>");
-         let ele = data["elements"][j]; //element from category
+      cate.append("<h2 class=\"heading\">" + data["type"][lanIndex] + "</h2>"); //add title
+      for(let j = 0; j < data["elements"].length; j++){ //For each element on category
+         let elem = ele.clone(); //create new element
+         let d = data["elements"][j]; //get json-data of the element
 
-         e.append($("<span class=\"date\">" + ele.date + "</span>"));
-         e.append($("<h2>" + ele.title[0] + "</h2>"));
-         if(ele.subtitle.length != 0){
-            e.append($("<span class=\"position\">" + ele.subtitle[lanIndex] + "</span>"));
+         let c = $("<div class=\"text pl-3\"></div>"); // Create content div
+         c.append($("<span class=\"date\">" + d.date + "</span>")); // add the date
+         c.append($("<h2>" + d.title[0] + "</h2>")); // add the title
+         if(d.subtitle.length != 0){ //if subtitle, add it
+            c.append($("<span class=\"position\">" + d.subtitle[lanIndex] + "</span>"));
          }
+         for(let k = 0; k < d.extra.length; k++){ // for each possible extra info, add it
+            c.append($("<p>" + d.extra[k][lanIndex] + "</p>"));
+         }
+         
 
-         el.append(e);
-         cont.append(el);
+         elem.append(c); // add the content to the element
+         cate.append(elem); // add the element to the category
       }
 
-
-      elems.push(cont);
+      elems.push(cate); // add the category to the array of categories
    }
 
 
-   for(let i = 0; i < elems.length; i++){
-      $("#main").append(elems[i]);
+   for(let i = 0; i < elems.length; i++){ // for each category
+      $("#main").append(elems[i]); // add it to the DOM
    }
-
 
    console.log("Execution ended");
 
