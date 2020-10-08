@@ -1,5 +1,4 @@
-var lanIndex = 0;
-// var lanIndex = (navigator.language == "es-ES")? 0 : 1;
+var lanIndex = (navigator.language == "es-ES")? 0 : 1;
 
 // fetch("content/content.json").then(response => response.json()).then(json => updateContent(json));
 fetch("https://jkutkut.github.io/CV-Jkutkut/content/content.json").then(response => response.json()).then(json => updateContent(json));
