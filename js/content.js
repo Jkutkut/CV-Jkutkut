@@ -42,12 +42,47 @@ function updateContent(json){
    }
 
 
-   //Main
-   
+   //MainNav
    for(let i = 0; i < json["main"].length; i++){
       $("#mainNavi").append($("<li><a href=\"#page-" + (i + 1) + "\">" + json["main"][i]["type"][lanIndex] + "</a></li>"));
    }
    $("#mainNavi").append($("<li><a href=\"#page-" + (json["main"].length + 1) + "\">" + json["skills"]["type"][lanIndex] + "</a></li>"))
+   
+   //Main
+   elems = [];
+   for(let i = 0; i < 1; i++){
+   // for(let i = 0; i < json["main"].length + 1; i++){
+      let cont = $("<div id=\"page-" + (i + 1) + "\" class= \"page\"></div>");
+      
+      let data;
+      data = (json["main"][i])? json["main"][i] : json["skills"]; //Category: education...
+
+      
+      cont.append("<h2 class=\"heading\">" + data["type"][lanIndex] + "</h2>"); //Title
+      
+      for(let j = 0; j < data["elements"].length; j++){
+         let el = $("<div class=\"resume-wrap d-flex ftco-animate\"><div class=\"icon d-flex align-items-center justify-content-center\"><span class=\"flaticon-ideas\"></span></div>");
+         let e = $("<div class=\"text pl-3\"></div>");
+         let ele = data["elements"][j]; //element from category
+
+         e.append($("<span class=\"date\">" + ele.date + "</span>"));
+         e.append($("<h2>" + ele.title[0] + "</h2>"));
+         if(ele.subtitle.length != 0){
+            e.append($("<span class=\"position\">" + ele.subtitle[lanIndex] + "</span>"));
+         }
+
+         el.append(e);
+         cont.append(el);
+      }
+
+
+      elems.push(cont);
+   }
+
+
+   for(let i = 0; i < elems.length; i++){
+      $("#main").append(elems[i]);
+   }
 
 
    console.log("Execution ended");
