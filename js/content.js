@@ -150,7 +150,8 @@ function updateContent(json){
    imgP.empty();
    linkP.empty();
 
-   // for(let i = 0; i < 1; i++){
+   $("#contactmeParent").empty();
+
    for(let i = 0; i < data.length; i++){
       let eleGP = childP.clone();
       let eleP = childC.clone();
