@@ -12,18 +12,18 @@ function updateContent(json){
    }
 
    // TOP-BAR
-   for(let i = 0; i < json["top-bar"]["fields"][lanIndex].length; i++){
-      let href = json["top-bar"]["href"][i];
-      let label = json["top-bar"]["fields"][lanIndex][i];
+   for(let i = 0; i < json["top-bar"]["fields"].length; i++){ // for each element on the top bar
+      let href = json["top-bar"]["href"][i]; //get href
+      let label = g(json["top-bar"]["fields"][i]); //get label
       let ele = $("<li class=\"nav-item\"><a href=\"" + href + "\" class=\"nav-link\"><span>" + label + "</span></a></li>");
-      $("#topBar").append(ele);
+      $("#topBar").append(ele); //add it to the top bar
    }
 
    // INTRO
    let elems = [];
-   elems.push($("<h1>" + json['intro']['name'] + "</h1>"));
-   elems.push($("<span class=\"subheading\">" + json['intro']['introMsg'][lanIndex] + "</span>"));
-   $("#qualities").attr("data-rotate", "[" + json['intro']['qualities'][lanIndex].map(x => "\"" + x + "\"") + "]");
+   elems.push($("<h1>" + json['intro']['name'] + "</h1>")); // add the main name h1
+   elems.push($("<span class=\"subheading\">" + g(json['intro']['introMsg']) + "</span>")); // Add the "hey there! I am"
+   $("#qualities").attr("data-rotate", "[" + json['intro']['qualities'].map(x => "\"" + g(x) + "\"") + "]"); // Add the qualities as an array of strings
 
    for(let i = 0; i < elems.length; i++){
       $("#intro").prepend(elems[i]); //Add them at the begining
@@ -31,23 +31,23 @@ function updateContent(json){
 
    // BIO
    elems = []; // clear elems
-   elems.push($("<h2 class=\"mb-4\">" + json["bio"]["title"][lanIndex] + "</h2>"));
-   elems.push($("<p>" + json["bio"]["intro"][0] + "</p>")); ///FJALKFJÑALJFLKAJÑFAKJFÑAJDFLÑAJDKLFJADFJÑADFJALJFÑLAJFLAJ
+   elems.push($("<h2 class=\"mb-4\">" + g(json["bio"]["title"]) + "</h2>")); //create the "about me" h2
+   elems.push($("<p>" + g(json["bio"]["intro"]) + "</p>")); // create bio text
    
-   let list = $("<ul class=\"about-info mt-4 px-md-0 px-2\"></ul>");
-   for(let i = 0; i < json["bio"]["fields"][0].length; i++){
-      let ele = $("<li class=\"d-flex\"><span>" + json["bio"]["fields"][lanIndex][i] + ":</span> <span>" + json["bio"]["fieldsData"][lanIndex][i] + "</span></li>");
-      list.append(ele);
+   let list = $("<ul class=\"about-info mt-4 px-md-0 px-2\"></ul>"); //create the list
+   for(let i = 0; i < json["bio"]["fields"].length; i++){ //for each element on the list
+      let ele = $("<li class=\"d-flex\"><span>" + g(json["bio"]["fields"][i]) + ":</span> <span>" + g(json["bio"]["fieldsData"][i]) + "</span></li>");
+      list.append(ele); //add it to the list
    }
-   elems.push(list);
+   elems.push(list); //add the list to the elemes array
 
-   for(let i = 0; i < elems.length; i++){
-      $("#bio").append(elems[i]); 
+   for(let i = 0; i < elems.length; i++){ //for each element on the array
+      $("#bio").append(elems[i]); //add it
    }
 
    
    //MAIN
-   elems = [];
+   elems = []; //clear array
    let category = $("#page-1").clone(); //category template (education...)
    let ele = $(category.children()[1]); //content template
    ele.children()[1].remove();
@@ -59,19 +59,19 @@ function updateContent(json){
       cate.attr("id", "page-" + (i + 1)); // set id
       let data = (json["main"][i])? json["main"][i] : json["skills"]; //get json-data of Category: education...
 
-      cate.append("<h2 class=\"heading\">" + data["type"][lanIndex] + "</h2>"); //add title
+      cate.append("<h2 class=\"heading\">" + g(data["type"]) + "</h2>"); //add title
       for(let j = 0; j < data["elements"].length; j++){ //For each element on category
          let elem = ele.clone(); //create new element
          let d = data["elements"][j]; //get json-data of the element
 
          let c = $("<div class=\"text pl-3\"></div>"); // Create content div
          c.append($("<span class=\"date\">" + d.date + "</span>")); // add the date
-         c.append($("<h2>" + d.title[0] + "</h2>")); // add the title
+         c.append($("<h2>" + g(d.title) + "</h2>")); // add the title
          if(d.subtitle.length != 0){ //if subtitle, add it
-            c.append($("<span class=\"position\">" + d.subtitle[lanIndex] + "</span>"));
+            c.append($("<span class=\"position\">" + g(d.subtitle) + "</span>"));
          }
          for(let k = 0; k < d.extra.length; k++){ // for each possible extra info, add it
-            c.append($("<p>" + d.extra[k][lanIndex] + "</p>"));
+            c.append($("<p>" + g(d.extra[k]) + "</p>"));
          }
          
 
@@ -90,15 +90,15 @@ function updateContent(json){
 
    //MAINNAV
    for(let i = 0; i < json["main"].length; i++){
-      $("#mainNavi").append($("<li><a href=\"#page-" + (i + 1) + "\">" + json["main"][i]["type"][lanIndex] + "</a></li>"));
+      $("#mainNavi").append($("<li><a href=\"#page-" + (i + 1) + "\">" + g(json["main"][i]["type"]) + "</a></li>"));
    }
-   $("#mainNavi").append($("<li><a href=\"#page-" + (json["main"].length + 1) + "\">" + json["skills"]["type"][lanIndex] + "</a></li>"));
+   $("#mainNavi").append($("<li><a href=\"#page-" + (json["main"].length + 1) + "\">" + g(json["skills"]["type"]) + "</a></li>"));
 
 
    //SKILLS
    elems = [];
    let data = json["skills"]["elements"];
-   $("#page-5").children("h2").text(json["skills"]["type"][lanIndex]);
+   $("#page-5").children("h2").text(g(json["skills"]["type"]));
    let eleP = $($("#skills").children()[0]).clone(); //skill template parent
    let eleC = $(eleP.children()[0]); //skill template child
    
@@ -124,7 +124,7 @@ function updateContent(json){
       rProgC.css("width", d);
       rProgC.children("span").text(d);
 
-      rEleC.append($("<h3>" + data[i].title[lanIndex] + "</h3>"));
+      rEleC.append($("<h3>" + g(data[i].title) + "</h3>"));
       rProgP.append(rProgC);
       rEleC.append(rProgP);
       
@@ -136,6 +136,18 @@ function updateContent(json){
       $("#skills").append(elems[i]);
    }
 
+
+   // CONTACT ME
+   $("#contactmeTitle").text(g(json["contact"]["type"]));
+   data = json["contact"]["elements"];
+   let child = $($("#contactmeParent").children()[0]);
+
+   for(let i = 0; i < 1; i++){
+   // for(let i = 0; i < data.length; i++){
+      let ele = child.clone();
+
+      $("#contactmeParent").append(ele);
+   }
    console.log("Execution ended");
 
 }
