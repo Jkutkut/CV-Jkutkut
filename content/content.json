@@ -539,18 +539,6 @@
         "elements": [
             {
                 "title": [
-                    "Correo UPM",
-                    "UPM mail"
-                ],
-                "href":[
-                    "mail"
-                ],
-                "data": [
-                    "jorge.re.gonzalez @alumnos.upm.es"
-                ]
-            },
-            {
-                "title": [
                     "Correo BQ",
                     "BQ Mail"
                 ],
@@ -559,6 +547,18 @@
                 ],
                 "data": [
                     "jorge.re@bq.com"
+                ]
+            },
+            {
+                "title": [
+                    "Correo UPM",
+                    "UPM mail"
+                ],
+                "href":[
+                    "mail"
+                ],
+                "data": [
+                    "jorge.re.gonzalez @alumnos.upm.es"
                 ]
             },
             {
