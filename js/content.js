@@ -1,6 +1,7 @@
 var lanIndex = (navigator.language == "es-ES")? 0 : 1;
 
 // fetch("content/content.json").then(response => response.json()).then(json => updateContent(json));
+// setTimeout("fetch(\"https://jkutkut.github.io/CV-Jkutkut/content/content.json\").then(response => response.json()).then(json => updateContent(json))", 1000);
 fetch("https://jkutkut.github.io/CV-Jkutkut/content/content.json").then(response => response.json()).then(json => updateContent(json));
 
 function updateContent(json){
@@ -140,13 +141,40 @@ function updateContent(json){
    // CONTACT ME
    $("#contactmeTitle").text(g(json["contact"]["type"]));
    data = json["contact"]["elements"];
-   let child = $($("#contactmeParent").children()[0]);
+   let childP = $($("#contactmeParent").children()[0]).clone();
+   let childC = $(childP.children()[0]).clone();
+   childP.empty();
+   let imgP = $(childC.children()[0]).clone();
+   let linkP = $(childC.children()[1]).clone();
+   childC.empty();
+   imgP.empty();
+   linkP.empty();
 
-   for(let i = 0; i < 1; i++){
-   // for(let i = 0; i < data.length; i++){
-      let ele = child.clone();
+   // for(let i = 0; i < 1; i++){
+   for(let i = 0; i < data.length; i++){
+      let eleGP = childP.clone();
+      let eleP = childC.clone();
 
-      $("#contactmeParent").append(ele);
+      let imgp = imgP.clone();
+      let im = (data[i].href[0] == "mail")? "icon-paper-plane" : "icon-globe";
+      imgp.append($("<span class=\"" + im + "\"></span>"));
+      eleP.append(imgp);
+
+      let link = linkP.clone();
+      link.append($("<h3 class=\"mb-4\">" + g(data[i].title) + "</h3>"));
+      let href;
+      if (data[i].href[0] == "mail"){
+         href = "mailto:" + g(data[i].data);
+      }
+      else{
+         href = data[i].href[1];
+      }
+      link.append($("<p><a href=\"" + href + "\">" + g(data[i].data) + "</a></p>"));
+      eleP.append(link);
+
+      eleGP.append(eleP);
+
+      $("#contactmeParent").append(eleGP);
    }
    console.log("Execution ended");
 
