@@ -1,7 +1,6 @@
 var lanIndex = (navigator.language == "es-ES")? 0 : 1;
 
 // fetch("content/content.json").then(response => response.json()).then(json => updateContent(json));
-// setTimeout("fetch(\"https://jkutkut.github.io/CV-Jkutkut/content/content.json\").then(response => response.json()).then(json => updateContent(json))", 1000);
 fetch("https://jkutkut.github.io/CV-Jkutkut/content/content.json").then(response => response.json()).then(json => updateContent(json));
 
 function updateContent(json){
@@ -63,6 +62,7 @@ function updateContent(json){
       cate.append("<h2 class=\"heading\">" + g(data["type"]) + "</h2>"); //add title
       for(let j = 0; j < data["elements"].length; j++){ //For each element on category
          let elem = ele.clone(); //create new element
+         elem.attr("class", elem.attr("class") + " fadeInUp ftco-animated"); // this fix a bug that hides the content created. It adds some html-classes that did not get coppied on the clonation
          let d = data["elements"][j]; //get json-data of the element
 
          let c = $("<div class=\"text pl-3\"></div>"); // Create content div
@@ -116,6 +116,8 @@ function updateContent(json){
    for(let i = 0; i < data.length; i++){
       let rEleP = eleP.clone();
       let rEleC = eleC.clone();
+      rEleC.attr("class", rEleC.attr("class") + " fadeInUp ftco-animated");
+
       
       let rProgP = progP.clone();
       let rProgC = progC.clone();
@@ -154,6 +156,8 @@ function updateContent(json){
 
    for(let i = 0; i < data.length; i++){
       let eleGP = childP.clone();
+      eleGP.attr("class", eleGP.attr("class") + " fadeInUp ftco-animated"); // this fix a bug that hides the content created. It adds some html-classes that did not get coppied on the clonation
+
       let eleP = childC.clone();
 
       let imgp = imgP.clone();
