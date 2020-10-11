@@ -111,6 +111,94 @@
     "main": [
         {
             "type": [
+                "Experiencia",
+                "Professional experience"
+            ],
+            "elements":[
+                {
+                    "date": "2013-2020",
+                    "title": [
+                        "Desarrollo de proyectos",
+                        "Project development"
+                    ],
+                    "subtitle": [],
+                    "extra": [
+                        [
+                            "Desarrollo en Programación, Robótica y diseño 3D.",
+                            "Programming, robotics and 3D design development."
+                        ]
+                    ]
+                },
+                {
+                    "date": "2014 – 2020",
+                    "title": [
+                        "Programación avanzada en AppInventor",
+                        "AppInventor advanced programming"
+                    ],
+                    "subtitle": [],
+                    "extra": []
+                },
+                {
+                    "date": "2015 – 2019",
+                    "title": [
+                        "Programación y diseño de comunicación entre dispositivos móviles y Arduino",
+                        "Communication programming and design using smartphones and Arduino"
+                    ],
+                    "subtitle": [],
+                    "extra": [
+                        [
+                            "Haciendo uso de Bluetooth y Wifi.",
+                            "Using Bluetooth and Wifi."
+                        ]
+                    ]
+                },
+                {
+                    "date": "2013 - 2018",
+                    "title": [
+                        "Competiciones de programación y robótica",
+                        "Programming and robotics championships"
+                    ],
+                    "subtitle": [
+                        "Robocampeones</span><br><span class='position'>Retotech Fundación Endesa (<a href='#endesa'>detalles</a>)"
+                    ],
+                    "extra": []
+                },
+                {
+                    "date": "2018-2020",
+                    "title": [
+                        "Profesor de programación, diseño 3D, VR y robótica",
+                        "Programming, 3D design, VR and robotics teacher"
+                    ],
+                    "subtitle": [
+                        "BQ",
+                        "BQ"
+                    ],
+                    "extra": [
+                        [
+                            "<strong>2017 - 2020</strong>: Club de Robótica del I.E.S. Federico Garcia Lorca.",
+                            "<strong>2017 - 2020</strong>: I.E.S. Federico Garcia Lorca's robotics' club."
+                        ],
+                        [
+                            "<strong>Veranos 2018 y 2019</strong>: Colegio Europeo de Madrid.",
+                            "<strong>Summers 2018 and 2019</strong>: Colegio Europeo de Madrid."
+                        ]
+                    ]
+                },
+                {
+                    "date": "2020 - Actual",
+                    "title": [
+                        "Creación de contenido para la enseñanza",
+                        "Content creation for teaching"
+                    ],
+                    "subtitle": [
+                        "BQ"
+                    ],
+                    "extra": []
+                }
+            ]
+        },
+        {
+            "type": [
                 "Educación",
                 "Education"
             ],
@@ -302,94 +390,6 @@
                             "<strong>Electronic circuit design</strong>: VHDL"
                         ]
                     ]
-                }
-            ]
-        },
-        {
-            "type": [
-                "Experiencia",
-                "Professional experience"
-            ],
-            "elements":[
-                {
-                    "date": "2013-2020",
-                    "title": [
-                        "Desarrollo de proyectos",
-                        "Project development"
-                    ],
-                    "subtitle": [],
-                    "extra": [
-                        [
-                            "Desarrollo en Programación, Robótica y diseño 3D.",
-                            "Programming, robotics and 3D design development."
-                        ]
-                    ]
-                },
-                {
-                    "date": "2014 – 2020",
-                    "title": [
-                        "Programación avanzada en AppInventor",
-                        "AppInventor advanced programming"
-                    ],
-                    "subtitle": [],
-                    "extra": []
-                },
-                {
-                    "date": "2015 – 2019",
-                    "title": [
-                        "Programación y diseño de comunicación entre dispositivos móviles y Arduino",
-                        "Communication programming and design using smartphones and Arduino"
-                    ],
-                    "subtitle": [],
-                    "extra": [
-                        [
-                            "Haciendo uso de Bluetooth y Wifi.",
-                            "Using Bluetooth and Wifi."
-                        ]
-                    ]
-                },
-                {
-                    "date": "2013 - 2018",
-                    "title": [
-                        "Competiciones de programación y robótica",
-                        "Programming and robotics championships"
-                    ],
-                    "subtitle": [
-                        "Robocampeones</span><br><span class='position'>Retotech Fundación Endesa (<a href='#endesa'>detalles</a>)"
-                    ],
-                    "extra": []
-                },
-                {
-                    "date": "2018-2020",
-                    "title": [
-                        "Profesor de programación, diseño 3D, VR y robótica",
-                        "Programming, 3D design, VR and robotics teacher"
-                    ],
-                    "subtitle": [
-                        "BQ",
-                        "BQ"
-                    ],
-                    "extra": [
-                        [
-                            "<strong>2017 - 2020</strong>: Club de Robótica del I.E.S. Federico Garcia Lorca.",
-                            "<strong>2017 - 2020</strong>: I.E.S. Federico Garcia Lorca's robotics' club."
-                        ],
-                        [
-                            "<strong>Veranos 2018 y 2019</strong>: Colegio Europeo de Madrid.",
-                            "<strong>Summers 2018 and 2019</strong>: Colegio Europeo de Madrid."
-                        ]
-                    ]
-                },
-                {
-                    "date": "2020 - Actual",
-                    "title": [
-                        "Creación de contenido para la enseñanza",
-                        "Content creation for teaching"
-                    ],
-                    "subtitle": [
-                        "BQ"
-                    ],
-                    "extra": []
                 }
             ]
         },
